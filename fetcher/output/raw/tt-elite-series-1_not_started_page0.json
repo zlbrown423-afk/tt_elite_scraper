@@ -1,0 +1,1901 @@
+{
+  "data": {
+    "edges": [
+      {
+        "cursor": "MjAyNjA5MTEwMjIwMDBfdHNfM2dscndldGcxcGw0cmR5",
+        "node": {
+          "id": "ts_3glrwetg1pl4rdy",
+          "match_date": "2026-09-11T02:20:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_4jwq2ot4vzz0r0v",
+              "slug": "witold-stechly",
+              "name": "Witold Stechly",
+              "short_name": "W.Stechly",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_l7oqd0tnl617m51",
+              "slug": "guzik-michal",
+              "name": "Michal Guzik",
+              "short_name": " M. Guzik",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-witold-stechly-michal-guzik",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMjIwMDBfdHNfcHh3cnhldDAxMzJ5cXlr",
+        "node": {
+          "id": "ts_pxwrxet0132yqyk",
+          "match_date": "2026-09-11T02:20:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_n54qlgtgej8rvy9",
+              "slug": "durak-kamil",
+              "name": "Durak, Kamil",
+              "short_name": "Durak, Kamil",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_dj2ry4t39x7r1zp",
+              "slug": "komandzik-rafal",
+              "name": "Komandzik, Rafal",
+              "short_name": "Komandzik, Rafal",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-kamil-durak-rafal-komandzik",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMjM1MDBfdHNfZWRubTk3dHA5MGQxcXlv",
+        "node": {
+          "id": "ts_ednm97tp90d1qyo",
+          "match_date": "2026-09-11T02:35:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_4wyrn0t8dlg4m86",
+              "slug": "baran-mateusz",
+              "name": "Mateusz Baran",
+              "short_name": "Baran, Mateusz",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_jw2r0ltllg3zrz8",
+              "slug": "staniczek-adam",
+              "name": "Adam Staniczek",
+              "short_name": "Adam Staniczek",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-mateusz-baran-adam-staniczek",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMjQ1MDBfdHNfNnlwcTNqdHA1bjQzcmQ3",
+        "node": {
+          "id": "ts_6ypq3jtp5n43rd7",
+          "match_date": "2026-09-11T02:45:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_l7oqd0tvpy3m510",
+              "slug": "michalik-jerzy",
+              "name": "Michalik, Jerzy",
+              "short_name": "Michalik, Jerzy",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_n54qlgt2x8lzrvy",
+              "slug": "machelski-michal",
+              "name": "Michal Machelski",
+              "short_name": "Machelski, Michal",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-jerzy-michalik-michal-machelski-1",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMjQ1MDBfdHNfdmp4bTg4dDdndzIwbTZv",
+        "node": {
+          "id": "ts_vjxm88t7gw20m6o",
+          "match_date": "2026-09-11T02:45:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_l7oqd0tn4d80m51",
+              "slug": "lebek-marian",
+              "name": "Marian Lebek",
+              "short_name": "Lebek, Marian",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_2y8m42tdpjgql07",
+              "slug": "nowak-jakub-5",
+              "name": "Jakub Nowak",
+              "short_name": "Nowak",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-marian-lebek-nowak-jakub",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzAwMDBfdHNfNGp3cTJvdDVrZTk5cjB2",
+        "node": {
+          "id": "ts_4jwq2ot5ke99r0v",
+          "match_date": "2026-09-11T03:00:00.000000Z",
+          "teams": [
+            {
+              "id": "ba_696882",
+              "slug": "mateusz-misiak-2",
+              "name": "Mateusz Misiak",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ba_817312",
+              "slug": "bartlomiej-wisniewski",
+              "name": "Bartlomiej Wisniewski",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-mateusz-misiak-bart-omiej-wi-niewski",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzAwMDBfdHNfOTY1bWswdDA0eW95cTFn",
+        "node": {
+          "id": "ts_965mk0t04yoyq1g",
+          "match_date": "2026-09-11T03:00:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_ednm97tkvgo8qyo",
+              "slug": "solilo-dominik",
+              "name": "Dominik Solilo",
+              "short_name": "Solilo, Dominik",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "929955",
+              "slug": "adam-linek",
+              "name": "Adam Linek",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-dominik-solilo-adam-linek",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzAwMDBfdHNfZG4xbTF2dGdlMjBnbW9l",
+        "node": {
+          "id": "ts_dn1m1vtge20gmoe",
+          "match_date": "2026-09-11T03:00:00.000000Z",
+          "teams": [
+            {
+              "id": "891063",
+              "slug": "maksymilian-miastowski",
+              "name": "Maksymilian Miastowski",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_23xmvetz8z2qg8n",
+              "slug": "jakub-kuzmicz-4",
+              "name": "Jakub Kuzmicz",
+              "short_name": "Kuzmicz",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-maksymilian-miastowski-jakub-kuzmicz",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzAwMDBfdHNfenA1cno0dGQ3NXcwcTgy",
+        "node": {
+          "id": "ts_zp5rz4td75w0q82",
+          "match_date": "2026-09-11T03:00:00.000000Z",
+          "teams": [
+            {
+              "id": "959781",
+              "slug": "oskar-jadach",
+              "name": "Oskar Jadach",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_3glrwetwjlx2rdy",
+              "slug": "slosarczyk-pawel",
+              "name": "Pawel Slosarczyk",
+              "short_name": "Slosarczyk, Pawel",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-oskar-jadach-pawel-slosarczyk",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzA1MDBfdHNfOTY1bWswdDA0bzFscTFn",
+        "node": {
+          "id": "ts_965mk0t04o1lq1g",
+          "match_date": "2026-09-11T03:05:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_318q6xtovw4nqo9",
+              "slug": "henryk-tkaczyk",
+              "name": "Henryk Tkaczyk",
+              "short_name": "H.Tkaczyk",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_l7oqd0tnl617m51",
+              "slug": "guzik-michal",
+              "name": "Michal Guzik",
+              "short_name": " M. Guzik",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-henryk-tkaczyk-michal-guzik",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzEwMDBfdHNfZWRubTk3dHA5NzAycXlv",
+        "node": {
+          "id": "ts_ednm97tp9702qyo",
+          "match_date": "2026-09-11T03:10:00.000000Z",
+          "teams": [
+            {
+              "id": "ba_806962",
+              "slug": "yurij-fomin",
+              "name": "Yurij Fomin",
+              "short_name": "Fomin",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_dj2ry4t39x7r1zp",
+              "slug": "komandzik-rafal",
+              "name": "Komandzik, Rafal",
+              "short_name": "Komandzik, Rafal",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-yurij-fomin-rafal-komandzik",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzIwMDBfdHNfMWw0cmowdGQxNGw1cTd2",
+        "node": {
+          "id": "ts_1l4rj0td14l5q7v",
+          "match_date": "2026-09-11T03:20:00.000000Z",
+          "teams": [
+            {
+              "id": "926759",
+              "slug": "karol-wisniewski",
+              "name": "Karol Wisniewski",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "964979",
+              "slug": "bartlomiej-mleczko",
+              "name": "Bartlomiej Mleczko",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-karol-wisniewski-bartlomiej-mleczko",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzI1MDBfdHNfNHd5cm4wdDVleGwxbTg2",
+        "node": {
+          "id": "ts_4wyrn0t5exl1m86",
+          "match_date": "2026-09-11T03:25:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_23xmvet3vxwzqg8",
+              "slug": "trela-mateusz",
+              "name": "Mateusz Trela",
+              "short_name": "Trela, Mateusz",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_l5erg0tx9neq8k0",
+              "slug": "stapor-rafal-1",
+              "name": "Stapor Rafal",
+              "short_name": "Rafal",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-mateusz-trela-stapor-rafal",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzI1MDBfdHNfancycjBsdGduMjB5cno4",
+        "node": {
+          "id": "ts_jw2r0ltgn20yrz8",
+          "match_date": "2026-09-11T03:25:00.000000Z",
+          "teams": [
+            {
+              "id": "959439",
+              "slug": "grzegorz-poliniewicz",
+              "name": "Grzegorz Poliniewicz",
+              "short_name": "Poliniewicz",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_318q6xtwg94qo9j",
+              "slug": "martin-olejnik-4",
+              "name": "Martin Olejnik",
+              "short_name": "M.Olejnik",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-grzegorz-poliniewicz-martin-olejnik",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzI1MDBfdHNfbDVlcmcwdDczdzg2cThr",
+        "node": {
+          "id": "ts_l5erg0t73w86q8k",
+          "match_date": "2026-09-11T03:25:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_n54qlgtl6w8rvy9",
+              "slug": "mariusz-baron",
+              "name": "Mariusz Baron",
+              "short_name": "M.Baron",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_dj2ry4tkgkdnr1z",
+              "slug": "oskar-sokolowski",
+              "name": "Oskar Sokolowski",
+              "short_name": "O.Sokolowski",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-mariusz-baron-oskar-sokolowski",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzMwMDBfdHNfeDdsbTd3dDJvNzUycTJ3",
+        "node": {
+          "id": "ts_x7lm7wt2o752q2w",
+          "match_date": "2026-09-11T03:30:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_4jwq2ot4vzz0r0v",
+              "slug": "witold-stechly",
+              "name": "Witold Stechly",
+              "short_name": "W.Stechly",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_l7oqd0tvpy3m510",
+              "slug": "michalik-jerzy",
+              "name": "Michalik, Jerzy",
+              "short_name": "Michalik, Jerzy",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-witold-stechly-jerzy-michalik",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzM1MDBfdHNfMnk4bTQydGVqNncycWww",
+        "node": {
+          "id": "ts_2y8m42tej6w2ql0",
+          "match_date": "2026-09-11T03:35:00.000000Z",
+          "teams": [
+            {
+              "id": "ba_823281",
+              "slug": "rafal-idaczyk",
+              "name": "Rafal Idaczyk",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_2y8m42tdpjgql07",
+              "slug": "nowak-jakub-5",
+              "name": "Jakub Nowak",
+              "short_name": "Nowak",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-rafal-idaczyk-nowak-jakub",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzQwMDBfdHNfeTM5bXBwdGU1ejQ2bW9q",
+        "node": {
+          "id": "ts_y39mppte5z46moj",
+          "match_date": "2026-09-11T03:40:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_pxwrxetg952dqyk",
+              "slug": "kosmal-dawid",
+              "name": "Dawid Kosmal",
+              "short_name": "Kosmal, Dawid",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_3glrwetwk4zvrdy",
+              "slug": "sulkowski-bartek",
+              "name": "Bartek Sulkowski",
+              "short_name": "Sulkowski, Bartek",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-dawid-kosmal-bartek-sulkowski",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzQ1MDBfdHNfazgycmV5dGo5d3gycWVw",
+        "node": {
+          "id": "ts_k82reytj9wx2qep",
+          "match_date": "2026-09-11T03:45:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_4wyrn0tkdx4m86p",
+              "slug": "wloczko-krzysztof",
+              "name": "Wloczko, Krzysztof",
+              "short_name": "Wloczko, Krzysztof",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "883349",
+              "slug": "marcin-jadczyk",
+              "name": "Marcin Jadczyk",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-krzysztof-wloczko-marcin-jadczyk",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzUwMDBfdHNfMnk4bTQydGVqNnAycWww",
+        "node": {
+          "id": "ts_2y8m42tej6p2ql0",
+          "match_date": "2026-09-11T03:50:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_318q6xt5449qo9j",
+              "slug": "zagajewski-mateusz",
+              "name": "Zagajewski, Mateusz",
+              "short_name": "Zagajewski, Mateusz",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "883819",
+              "slug": "jakub-glanowski",
+              "name": "Jakub Glanowski",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-mateusz-zagajewski-jakub-glanowski",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzUwMDBfdHNfMzE4cTZ4dDMwd2cxcW85",
+        "node": {
+          "id": "ts_318q6xt30wg1qo9",
+          "match_date": "2026-09-11T03:50:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_k82reyt54y7qepz",
+              "slug": "jerzy-pelka",
+              "name": "Jerzy Pelka",
+              "short_name": "J.Pelka",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_y0or53tl375gmwz",
+              "slug": "sobkow-zbigniew",
+              "name": "Sobkow, Zbigniew",
+              "short_name": "Sobkow, Zbigniew",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-jerzy-pelka-zbigniew-sobkow",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwMzU1MDBfdHNfeTBvcjUzdHc0bzBkbXd6",
+        "node": {
+          "id": "ts_y0or53tw4o0dmwz",
+          "match_date": "2026-09-11T03:55:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_n54qlgt2x8lzrvy",
+              "slug": "machelski-michal",
+              "name": "Michal Machelski",
+              "short_name": "Machelski, Michal",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_8yomopt7vk91q0j",
+              "slug": "zelezik-jacek",
+              "name": "Jacek Zelezik",
+              "short_name": "Zelezik, Jacek",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-michal-machelski-jacek-zelezik-1",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwNDAwMDBfdHNfZGoycnk0dDl5MXh6cjF6",
+        "node": {
+          "id": "ts_dj2ry4t9y1xzr1z",
+          "match_date": "2026-09-11T04:00:00.000000Z",
+          "teams": [
+            {
+              "id": "ts_ednm97tkvgo8qyo",
+              "slug": "solilo-dominik",
+              "name": "Dominik Solilo",
+              "short_name": "Solilo, Dominik",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "926759",
+              "slug": "karol-wisniewski",
+              "name": "Karol Wisniewski",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-dominik-solilo-karol-wisniewski",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwNDAwMDBfdHNfbDdvcWQwdDk2bzNwbTUx",
+        "node": {
+          "id": "ts_l7oqd0t96o3pm51",
+          "match_date": "2026-09-11T04:00:00.000000Z",
+          "teams": [
+            {
+              "id": "954103",
+              "slug": "mariusz-adamus",
+              "name": "Mariusz Adamus",
+              "short_name": "Adamus",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "ts_l7oqd0tn4d80m51",
+              "slug": "lebek-marian",
+              "name": "Marian Lebek",
+              "short_name": "Lebek, Marian",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-mariusz-adamus-marian-lebek",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      },
+      {
+        "cursor": "MjAyNjA5MTEwNDEwMDBfdHNfMjN4bXZldGxvODZncWc4",
+        "node": {
+          "id": "ts_23xmvetlo86gqg8",
+          "match_date": "2026-09-11T04:10:00.000000Z",
+          "teams": [
+            {
+              "id": "891063",
+              "slug": "maksymilian-miastowski",
+              "name": "Maksymilian Miastowski",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            },
+            {
+              "id": "959439",
+              "slug": "grzegorz-poliniewicz",
+              "name": "Grzegorz Poliniewicz",
+              "short_name": "Poliniewicz",
+              "country": {
+                "slug": "world",
+                "name": "World",
+                "iso": "WLD",
+                "logo": "https://static.scores24.live/upload/country/origin/b4b/849/3dd19a0b3955090a1e4d1845e041635e73.png"
+              },
+              "temporarily_qualified": false,
+              "national_team": false
+            }
+          ],
+          "result_score": null,
+          "result_scores": [
+            {
+              "type": "FT",
+              "value": "0:0"
+            }
+          ],
+          "slug": "11-09-2026-maksymilian-miastowski-grzegorz-poliniewicz",
+          "sport_slug": "table-tennis",
+          "unique_tournament": {
+            "name": "TT Elite Series",
+            "short_name": "TT Elite Series",
+            "slug": "tt-elite-series-1",
+            "isActual": false
+          },
+          "country": {
+            "slug": "poland",
+            "name": "Poland",
+            "iso": "POL",
+            "logo": "https://static.scores24.live/upload/country/origin/e58/8ae/3ae8bd67b3a8f70a22d3dbbfb471438876.png"
+          },
+          "status": {
+            "code": 0,
+            "name": null
+          },
+          "winner": null,
+          "type": null,
+          "is_live": false,
+          "statistic": null,
+          "langSlug": "en",
+          "cards": [],
+          "broadcasts": [],
+          "has_squads": false,
+          "has_standings": false,
+          "has_h2h": false,
+          "has_new_h2h": false,
+          "has_odds": true,
+          "has_prediction": false,
+          "league_slug": "tt-elite-series-1",
+          "is_finished": false
+        }
+      }
+    ],
+    "pageInfo": {
+      "hasNextPage": true,
+      "endCursor": "MjAyNjA5MTEwNDEwMDBfdHNfMjN4bXZldGxvODZncWc4"
+    }
+  }
+}
