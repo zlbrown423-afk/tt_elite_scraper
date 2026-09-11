@@ -1,0 +1,66 @@
+{
+  "probedAtUTC": "2026-09-11T00:48:08.872335+00:00",
+  "targets": {
+    "scores24_tournament_1": {
+      "url": "https://scores24.live/en/table-tennis/l-tt-elite-series-1",
+      "requests": {
+        "status": 200,
+        "bytes": 323629,
+        "elapsed_s": 0.95,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://scores24.live/en/table-tennis/l-tt-elite-series-1",
+        "sniff": {
+          "Slawinski": false,
+          "Baron": false,
+          "Idaczyk": false,
+          "Kurek": false,
+          "TT Elite": true,
+          "Elite Series": true,
+          "table-tennis": true
+        },
+        "savedAs": "probe/output/scores24_tournament_1_requests.html"
+      },
+      "playwright": {
+        "status": 200,
+        "bytes": 630721,
+        "elapsed_s": 9.59,
+        "final_url": "https://scores24.live/en/table-tennis/l-tt-elite-series-1",
+        "sniff": {
+          "Slawinski": false,
+          "Baron": false,
+          "Idaczyk": false,
+          "Kurek": false,
+          "TT Elite": true,
+          "Elite Series": true,
+          "table-tennis": true
+        },
+        "savedAs": "probe/output/scores24_tournament_1_playwright.html"
+      }
+    },
+    "scores24_tournament_2": {
+      "url": "https://scores24.live/en/table-tennis/l-tt-elite-series-2",
+      "requests": {
+        "status": 200,
+        "bytes": 252762,
+        "elapsed_s": 0.77,
+        "content_type": "text/html; charset=utf-8",
+        "final_url": "https://scores24.live/en/table-tennis/l-tt-elite-series-2",
+        "sniff": {
+          "Slawinski": false,
+          "Baron": false,
+          "Idaczyk": false,
+          "Kurek": false,
+          "TT Elite": true,
+          "Elite Series": true,
+          "table-tennis": true
+        },
+        "savedAs": "probe/output/scores24_tournament_2_requests.html"
+      },
+      "playwright": {
+        "ok": false,
+        "error": "TimeoutError: Page.goto: Timeout 20000ms exceeded.\nCall log:\n  - navigating to \"https://scores24.live/en/table-tennis/l-tt-elite-series-2\", waiting until \"networkidle\"\n",
+        "elapsed_s": 20.03
+      }
+    }
+  }
+}
