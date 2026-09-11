@@ -77,6 +77,35 @@ def edges_of(*nodes):
     return [{"cursor": f"cur_{n['id']}", "node": n} for n in nodes]
 
 
+def make_rapi_node(mid, is_finished, is_live, winner=None, result_score=None, name_a="Player One", name_b="Player Two"):
+    """
+    Same match shape as make_node(), but with the snake_case keys the real
+    RAPI response actually uses (confirmed from
+    fetcher/output/raw/tt-elite-series-1_ended_page0.json), instead of the
+    camelCase hydration-payload keys make_node() uses. Used to prove
+    fetch_scores24 -> parse_match_node handles direct RAPI nodes correctly,
+    since a production run reported finished=0/notStarted=816/range=[None,
+    None] specifically because those RAPI nodes carry no camelCase keys at
+    all.
+    """
+    return {
+        "id": mid,
+        "match_date": "2026-09-11T00:00:00.000000Z",
+        "teams": [
+            {"id": f"{mid}_a", "slug": "player-one", "name": name_a},
+            {"id": f"{mid}_b", "slug": "player-two", "name": name_b},
+        ],
+        "result_score": result_score,
+        "result_scores": [{"type": "FT", "value": result_score or "0:0"}],
+        "slug": f"slug-{mid}",
+        "league_slug": "tt-elite-series-1",
+        "winner": winner,
+        "is_live": is_live,
+        "is_finished": is_finished,
+        "serving": None,
+    }
+
+
 # --------------------------------------------------------------------
 # Test 1: two-page pagination via nested {"data": {...}} shape, cursor
 # comes only from the previous response's own pageInfo.
@@ -315,6 +344,63 @@ def test_run_fetch_end_to_end_with_conflict():
     check("e2e: fetchMethod is 'api' (not 'requests'/'playwright')", all(r["fetchMethod"] == "api" for r in report["records"]))
 
 
+# --------------------------------------------------------------------
+# Test 8: real production bug regression -- run_fetch end-to-end against
+# snake_case RAPI-shaped nodes (make_rapi_node, not make_node) for all
+# three statuses. Before the parser's dual-schema fix, this reproduced
+# finished=0, notStarted=816-equivalent (every record misclassified as
+# not-started), and firstMatchTimestamp/lastMatchTimestamp both None.
+# --------------------------------------------------------------------
+def test_run_fetch_handles_real_rapi_snake_case_schema():
+    ended_node = make_rapi_node("ts_ended1", True, False, winner=2, result_score="1:3")
+    live_node = make_rapi_node("ts_live1", False, True, winner=None, result_score="2:1")
+    not_started_node = make_rapi_node("ts_ns1", False, False, winner=None, result_score=None)
+
+    def fake_get(url, params=None, headers=None, timeout=None):
+        status = params.get("status")
+        if status == "ended":
+            body = {"data": {"edges": edges_of(ended_node), "pageInfo": {"hasNextPage": False, "endCursor": "a"}}}
+        elif status == "live":
+            body = {"data": {"edges": edges_of(live_node), "pageInfo": {"hasNextPage": False, "endCursor": "b"}}}
+        elif status == "not_started":
+            body = {"data": {"edges": edges_of(not_started_node), "pageInfo": {"hasNextPage": False, "endCursor": "c"}}}
+        else:
+            raise AssertionError(f"unexpected status {status}")
+        return FakeResponse(200, body, f"https://scores24.live/rapi/.../matches?status={status}")
+
+    with mock.patch("requests.Session") as SessionCls:
+        instance = mock.Mock()
+        instance.get.side_effect = fake_get
+        SessionCls.return_value = instance
+
+        report = fs.run_fetch(
+            league_slug="tt-elite-series-1",
+            statuses=["live", "not_started", "ended"],
+            first=5,
+            date_from=None,
+            date_to=None,
+            max_pages=10,
+            timeout=5,
+            max_retries=3,
+            backoff_base=0.001,
+            raw_dir=None,
+        )
+
+    v = report["verification"]
+    check("rapi_schema: exactly 1 finished record (the 'ended' node) -- was 0 before the fix",
+          v["finishedRecords"] == 1, f"{v}")
+    check("rapi_schema: exactly 1 live record", v["liveRecords"] == 1, f"{v}")
+    check("rapi_schema: exactly 1 not-started record -- was 3/3 before the fix",
+          v["notStartedRecords"] == 1, f"{v}")
+    check("rapi_schema: firstMatchTimestamp/lastMatchTimestamp are populated, not [None, None]",
+          v["firstMatchTimestamp"] is not None and v["lastMatchTimestamp"] is not None, f"{v}")
+    ended_record = next(r for r in report["records"] if r["matchId"] == "ts_ended1")
+    check("rapi_schema: the finished record's finalScore is populated from result_score",
+          ended_record["finalScore"] == "1:3", f"{ended_record}")
+    check("rapi_schema: the finished record's winnerSide maps winner=2 -> 'B'",
+          ended_record["winnerSide"] == "B")
+
+
 if __name__ == "__main__":
     test_two_page_pagination_nested_shape()
     test_flat_shape_accepted()
@@ -324,5 +410,6 @@ if __name__ == "__main__":
     test_retry_then_succeed()
     test_fail_loudly_after_exhausting_retries()
     test_run_fetch_end_to_end_with_conflict()
+    test_run_fetch_handles_real_rapi_snake_case_schema()
     print(f"\n{PASS} passed, {FAIL} failed")
     sys.exit(1 if FAIL else 0)

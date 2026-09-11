@@ -10,6 +10,15 @@ Scope (per project decision after the probe phase):
     production; see PROBE_FINDINGS.md).
   - Extracts the three `leaguesMatches` queries (status=live / not_started /
     ended) and maps each match node to a normalized record.
+  - `parse_match_node` (Stage 4) is also called directly by
+    `fetcher/fetch_scores24.py` on match nodes taken straight from the RAPI
+    JSON response, with no HTML/hydration step at all. That response uses
+    snake_case keys (`match_date`, `result_score`, `result_scores`,
+    `is_live`, `is_finished`, `league_slug`) where the hydration payload uses
+    camelCase (`matchDate`, `resultScore`, ...). `_field()` below reads
+    either name so `parse_match_node` normalizes both schemas to the same
+    output record; nothing about the output shape or dedup/status logic
+    differs between the two input schemas.
   - Uses the Scores24-internal match `id` as the dedup key, and each player's
     Scores24 `id`/`slug` as their identity key -- NOT their display name.
   - Does NOT guess. Anything that can't be mapped deterministically is
@@ -211,6 +220,41 @@ def normalize_display_name(raw_name: Optional[str]) -> tuple[Optional[str], bool
 # Stage 4: node -> normalized record
 # --------------------------------------------------------------------------
 
+# A match node can arrive in one of two shapes depending on where it came
+# from:
+#   - the `window.__REACT_QUERY_STATE__` hydration payload (HTML fetch path,
+#     parse_html_file below) -- camelCase keys, e.g. isFinished/matchDate.
+#   - a direct RAPI response node (fetcher/fetch_scores24.py, no HTML
+#     involved) -- snake_case keys, e.g. is_finished/match_date. Confirmed
+#     from a real production raw dump
+#     (fetcher/output/raw/tt-elite-series-1_ended_page0.json) after a
+#     production run reported finished=0/notStarted=816/range=[None,None] --
+#     every camelCase .get() was silently missing on these nodes.
+# Both are handled here so callers never need to know which one they have.
+_DUAL_SCHEMA_FIELDS = {
+    "isFinished": "is_finished",
+    "isLive": "is_live",
+    "matchDate": "match_date",
+    "resultScore": "result_score",
+    "resultScores": "result_scores",
+    "leagueSlug": "league_slug",
+}
+
+
+def _field(node: dict, camel_key: str) -> Any:
+    """
+    Read a match-node field that may be present under its camelCase
+    (hydration payload) or snake_case (direct RAPI) name. Presence -- not
+    truthiness -- decides which key wins, so an explicit `False`/`None`
+    under the camelCase key is never mistaken for "absent" and skipped in
+    favor of the snake_case fallback.
+    """
+    if camel_key in node:
+        return node[camel_key]
+    snake_key = _DUAL_SCHEMA_FIELDS[camel_key]
+    return node.get(snake_key)
+
+
 def _player_dict(team_node: dict, notes: list[str]) -> dict:
     raw_name = team_node.get("name")
     normalized, changed, anomaly = normalize_display_name(raw_name)
@@ -244,8 +288,8 @@ def parse_match_node(
     player_a = _player_dict(teams[0], notes) if len(teams) > 0 else None
     player_b = _player_dict(teams[1], notes) if len(teams) > 1 else None
 
-    is_finished = node.get("isFinished") is True
-    is_live = node.get("isLive") is True
+    is_finished = _field(node, "isFinished") is True
+    is_live = _field(node, "isLive") is True
     winner_raw = node.get("winner")
 
     # Requirement: `resultScore is not None` is NOT itself proof of a
@@ -258,9 +302,9 @@ def parse_match_node(
     set_scores: list[dict] = []
     live_score_snapshot = None
 
-    result_scores = node.get("resultScores") or []
+    result_scores = _field(node, "resultScores") or []
     if is_finished:
-        final_score = node.get("resultScore")
+        final_score = _field(node, "resultScore")
         for rs in result_scores:
             t = rs.get("type")
             if t == "FT":
@@ -272,7 +316,7 @@ def parse_match_node(
         # Preserve the in-progress score as a clearly-separate, clearly
         # non-final field rather than discarding it.
         live_score_snapshot = {
-            "scoreSoFar": node.get("resultScore"),
+            "scoreSoFar": _field(node, "resultScore"),
             "setsSoFar": [
                 {"set": rs.get("type"), "value": rs.get("value")}
                 for rs in result_scores
@@ -296,12 +340,13 @@ def parse_match_node(
     if winner_side is not None and final_score is None:
         notes.append("winner is set but no finalScore was recorded -- inconsistent, flagged for review")
 
+    node_league_slug = _field(node, "leagueSlug")
     record = {
         "matchId": node.get("id"),
         "source": "scores24",
-        "sourceLeagueSlug": source_league_slug or node.get("leagueSlug"),
-        "isActiveLeague": (source_league_slug or node.get("leagueSlug")) in ACTIVE_LEAGUE_SLUGS,
-        "dateISO": node.get("matchDate"),
+        "sourceLeagueSlug": source_league_slug or node_league_slug,
+        "isActiveLeague": (source_league_slug or node_league_slug) in ACTIVE_LEAGUE_SLUGS,
+        "dateISO": _field(node, "matchDate"),
         "playerA": player_a,
         "playerB": player_b,
         "status": status,
