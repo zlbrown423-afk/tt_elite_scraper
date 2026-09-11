@@ -1,0 +1,65 @@
+name: TT Elite production fetch (Scores24)
+
+# Calls the verified leaguesMatches rapi endpoint directly and paginates it
+# with the API's own cursor -- no full-page HTML fetch, no Playwright. See
+# fetcher/fetch_scores24.py for the implementation; it reuses
+# parser/parse_scores24.py's field-mapping/name-normalization/dedupe logic
+# unchanged. Manual trigger only -- this does not run on a schedule yet and
+# does not write anywhere near the TT Elite Terminal or the prediction model.
+on:
+  workflow_dispatch:
+    inputs:
+      league_slug:
+        description: "League slug to fetch"
+        required: false
+        default: "tt-elite-series-1"
+      first:
+        description: "Page size (the API's 'first' param)"
+        required: false
+        default: "25"
+      max_pages:
+        description: "Safety cap on pages PER status -- pagination is flagged non-normal if this is hit before hasNextPage=false"
+        required: false
+        default: "20"
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run production fetch (all three statuses)
+        run: |
+          python fetcher/fetch_scores24.py \
+            --league-slug "${{ inputs.league_slug }}" \
+            --status ended --status live --status not_started \
+            --first "${{ inputs.first }}" \
+            --max-pages "${{ inputs.max_pages }}" \
+            --raw-dir fetcher/output/raw \
+            --out fetcher/output/fetched.json
+
+      - name: Commit fetch output
+        if: always()
+        run: |
+          git config user.name "tt-elite-probe-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add fetcher/output
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Production fetch $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi
