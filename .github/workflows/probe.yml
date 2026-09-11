@@ -1,0 +1,46 @@
+name: TT Elite probe fetch
+
+# PROBE PHASE ONLY. This does not parse or ingest anything -- it just
+# fetches each candidate source two ways (plain HTTP, and a real rendered
+# headless browser) and commits the raw output back to this repo so it can
+# be inspected and used to build the real parser. Manual trigger only for
+# now; a schedule gets added once a real ingestion workflow replaces this.
+on:
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install Python dependencies
+        run: pip install -r probe/requirements.txt
+
+      - name: Install Playwright browser
+        run: python -m playwright install --with-deps chromium
+
+      - name: Run probe
+        run: python probe/probe.py
+
+      - name: Commit probe output
+        run: |
+          git config user.name "tt-elite-probe-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add probe/output
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Probe fetch $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+            git push
+          fi
